@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="style.css">
+    <script src="jsfortest.js"></script>
+    <style>
+      canvas {
+        border: 1px solid black
+      }
+    </style>
   </head>
-  <body>
-	<script src="index.js"></script>
-  <canvas id="canvas"></canvas>
+  <body onload = "draw();">
+    <canvas id="canvas" width = "150" heigh="150"></canvas>
   </body>
 </html>
