@@ -6,7 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="style.css">
-    <script src="jsfortest.js"></script>
+    <script type = "application/javascript">
+        function draw() {
+            const canvas = document.getElementById("canvas");
+            const ctx = canvas.getContext("2d");
+
+            ctx.fillStyle = "rgb(200, 0, 0)";
+            ctx.fillRect(10, 10, 50, 50);
+
+            ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+            ctx.fillRect(30, 30, 50, 50);
+        }
+    </script>
     <style>
       canvas {
         border: 1px solid black
